@@ -1,3 +1,4 @@
+import 'package:project_parkinson/model/enum.dart';
 import 'package:rxdart/subjects.dart';
 
 class UserBloc {
@@ -6,12 +7,12 @@ class UserBloc {
   Stream<String> get userName => _userName.stream;
   Function(String) get updateUserName => _userName.sink.add;
 
-  final _userEmotion = BehaviorSubject<String>();
+  final _userEmotion = BehaviorSubject<EmotionType>();
 
-  Stream<String> get userEmotion => _userEmotion.stream;
-  Function(String) get updateUserEmotion => _userEmotion.sink.add;
+  Stream<EmotionType> get userEmotion => _userEmotion.stream;
+  Function(EmotionType) get updateUserEmotion => _userEmotion.sink.add;
 
-  dispose() {
+  void dispose() {
     _userName.close();
     _userEmotion.close();
   }

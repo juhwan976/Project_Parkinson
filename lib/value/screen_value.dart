@@ -17,4 +17,6 @@ final double appHeight = screenHeight - paddingTop;
 final double appWidth = screenWidth;
 
 final double contentPadding = appWidth * 0.0666667;
+
 final double navigationHeight = screenHeight * 0.1;
+final double appBarHeight = screenHeight * 0.055;

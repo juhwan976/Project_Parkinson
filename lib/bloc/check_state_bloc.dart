@@ -1,0 +1,3 @@
+class CheckStateBloc {
+  void dispose() {}
+}

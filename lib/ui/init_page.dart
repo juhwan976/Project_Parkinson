@@ -15,6 +15,7 @@ class _InitPageState extends State<InitPage> {
     return Scaffold(
       body: SafeArea(
         child: FutureBuilder(
+          // TODO: 로그인 여부 파악하기.
           future: Future.delayed(const Duration(seconds: 1)),
           builder: (_, futureSnapshot) {
             if (futureSnapshot.connectionState == ConnectionState.done) {

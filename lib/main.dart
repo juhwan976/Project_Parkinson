@@ -23,12 +23,20 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
         primaryColor: const Color.fromRGBO(208, 208, 208, 1),
+        // dividerColor: ,
         textTheme: const TextTheme(
-          bodyText1: TextStyle(
+          headlineMedium: TextStyle(), // main page user name
+          headlineSmall: TextStyle(), // main page say hello
+          labelLarge: TextStyle(
+            color: Colors.black,
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ), // app bar title
+          bodyMedium: TextStyle(
             color: Colors.black,
             fontSize: 17,
           ),
-          bodyText2: TextStyle(
+          bodySmall: TextStyle(
             color: Colors.black,
             fontSize: 14,
           ),
@@ -37,14 +45,22 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(
         scaffoldBackgroundColor: Colors.grey,
         primaryColor: const Color.fromRGBO(208, 208, 208, 1),
+        // dividerColor: ,
         textTheme: const TextTheme(
-          headline4: TextStyle(),
-          headline5: TextStyle(),
-          bodyText1: TextStyle(
-            color: Colors.white,
+          headlineMedium: TextStyle(), // main page user name
+          headlineSmall: TextStyle(), // main page say hello
+          labelLarge: TextStyle(
+            color: Colors.black,
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ), // app bar title
+          bodyMedium: TextStyle(
+            color: Colors.black,
+            fontSize: 17,
           ),
-          bodyText2: TextStyle(
-            color: Colors.white,
+          bodySmall: TextStyle(
+            color: Colors.black,
+            fontSize: 14,
           ),
         ),
       ),
